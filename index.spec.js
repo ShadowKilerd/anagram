@@ -17,3 +17,11 @@ test('should return [ab, ba] when inputing ab', () => {
     expect(anagram('ab')).toEqual(expectedSet);
 });
 
+
+test('should return a lot when inputing abc', () => {
+    expect([...anagram('abc')].length).toEqual(6);
+});
+
+test('should return a lot when inputing abcd', () => {
+    expect([...anagram('abcd')].length).toEqual(24);
+});
