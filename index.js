@@ -1,9 +1,9 @@
 const anagram = (string) => {
     if(string.length == 0) {
-        return []
+        return new Set()
     }
     if (string.length == 1) {
-        return [string]
+        return new Set(string)
     }
 
 }
